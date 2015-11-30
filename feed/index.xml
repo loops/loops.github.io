@@ -6,8 +6,8 @@
 </description>
     <link>http://loops.github.io/</link>
     <atom:link href="http://loops.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Nov 2015 14:37:02 -0800</pubDate>
-    <lastBuildDate>Mon, 30 Nov 2015 14:37:02 -0800</lastBuildDate>
+    <pubDate>Mon, 30 Nov 2015 14:39:33 -0800</pubDate>
+    <lastBuildDate>Mon, 30 Nov 2015 14:39:33 -0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -21,15 +21,16 @@ file.&lt;/p&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;git_url&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;git@github.com:loops/loops.github.io&lt;/span&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;git_branch&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;master&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
 
-&lt;p&gt;You’ll have to have your ssh keys setup properly to allow pushing to allow the&lt;br /&gt;
-following command to generate and deploy content to your Github page:&lt;/p&gt;
+&lt;p&gt;You’ll have to have your ssh keys setup properly to allow pushing so that the&lt;br /&gt;
+following command can generate and deploy content to your Github page:&lt;/p&gt;
 
 &lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;figcaption class=&quot;code-highlight-caption&quot;&gt;&lt;span class=&quot;code-highlight-caption-title&quot;&gt;Deploy&lt;/span&gt;&lt;/figcaption&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;octopress deploy&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;This will create the static content in a .deploy directory before uploading it&lt;br /&gt;
 for free hosting on Github.  You’ll want to add this .deploy directory to your&lt;br /&gt;
-.gitignore file&lt;/p&gt;
+.gitignore file.&lt;/p&gt;
 
+&lt;p&gt;You should be able to see your blog site working on &lt;a href=&quot;http://loops.github.io&quot;&gt;http://loops.github.io&lt;/a&gt; now.&lt;/p&gt;
 </description>
         <pubDate>Mon, 30 Nov 2015 14:11:28 -0800</pubDate>
         <link>http://loops.github.io/2015/11/30/deploy-world.html</link>
