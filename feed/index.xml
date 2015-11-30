@@ -6,15 +6,15 @@
 </description>
     <link>http://loops.github.io/</link>
     <atom:link href="http://loops.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Nov 2015 14:29:47 -0800</pubDate>
-    <lastBuildDate>Mon, 30 Nov 2015 14:29:47 -0800</lastBuildDate>
+    <pubDate>Mon, 30 Nov 2015 14:37:02 -0800</pubDate>
+    <lastBuildDate>Mon, 30 Nov 2015 14:37:02 -0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Deploy World</title>
         <description>&lt;p&gt;To host the statically generated content on github, you’ll need to first create a&lt;br /&gt;
-Github repository named &lt;yourname&gt;.github.io.  Then create an octopress _deploy.yml
-file.&lt;/yourname&gt;&lt;/p&gt;
+Github repository named &amp;lt;yourname&amp;gt;.github.io.  Then create an octopress _deploy.yml&lt;br /&gt;
+file.&lt;/p&gt;
 
 &lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;figcaption class=&quot;code-highlight-caption&quot;&gt;&lt;span class=&quot;code-highlight-caption-title&quot;&gt;_deploy.yml&lt;/span&gt;&lt;/figcaption&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;git&lt;/span&gt;
 &lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;site_dir&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;_site&lt;/span&gt;
