@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class=" " lang="en" >
+<head>
+<meta charset="utf-8">
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://loops.github.io/2015/11/30/hello-world.html" rel="canonical">
+<meta name='generator' content='Octopress v Jekyll v2.5.3, Octopress v3.0.11 Octopress Ink v1.2.1'>
+
+<link href='/stylesheets/all-9bf6f7b60d9f1ef65cf5e27df325d1be.css' media='all' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+  <style>use { height: 0; }</style>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" style="display: none">
+  <g id="site-search-svg"><path d="M125.7,120l-5.7,5.7c-1.5,1.5-3.5,2.3-5.7,2.3c-2.1,0-4.2-0.8-5.7-2.3L72.4,89.3C65.2,93.6,56.9,96,48,96 C21.5,96,0,74.5,0,48S21.5,0,48,0s48,21.5,48,48c0,8.9-2.4,17.2-6.7,24.4l36.3,36.3C128.8,111.8,128.8,116.9,125.7,120z M48,80 c17.7,0,32-14.3,32-32S65.7,16,48,16c-17.7,0-32,14.3-32,32S30.3,80,48,80z"/></g>
+</svg>
+  <div class="site"><div class='nav-panel'>
+<nav class='mobile-nav' role="navigation">
+  <div class='mobile-nav-item mobile-nav-search'><form class='site-search' action="https://google.com/search" method="get">
+  <input type="hidden" name="sitesearch" value="loops.github.io">
+  <input id='site-search-mobile' class="site-search-input" type="text" name="q" results="0" placeholder="Search" accesskey="/">
+  <label class='site-search-label' for='site-search-mobile'><svg class='site-search-icon' viewBox="0 0 128 128">
+    <use xlink:href="#site-search-svg"></use>
+  </svg></label>
+</form></div>
+  <a class="mobile-nav-item " href="/"/>Posts</a>
+
+  
+  
+  
+  
+  <a class="mobile-nav-item " href="/archive/">Archive</a>
+
+  
+  
+  
+  
+  <a class="mobile-nav-item " href="/feed/">Subscribe</a>
+  
+</nav>
+</div>
+<div class="site-content">
+<div class="site-top"><div class="site-top-content">
+<header role="banner" class="site-header">
+  <h1 class="site-title"><a class="site-title-link" href="/"/>Loop's Tech Tips</a></h1>
+</header>
+<nav class='main-nav' role="navigation">
+  <a class="main-nav-item " href="/"/>Posts</a>
+  <a class="main-nav-item " href="/archive/">Archive</a>
+  <a class="main-nav-item " href="/feed/">Subscribe</a>
+  <div class='main-nav-item main-nav-search'><form class='site-search' action="https://google.com/search" method="get">
+  <input type="hidden" name="sitesearch" value="loops.github.io">
+  <input id='site-search-main' class="site-search-input" type="text" name="q" results="0" placeholder="Search" accesskey="/">
+  <label class='site-search-label' for='site-search-main'><svg class='site-search-icon' viewBox="0 0 128 128">
+    <use xlink:href="#site-search-svg"></use>
+  </svg></label>
+</form></div>
+  <button class="mobile-nav-toggle" href="#" onclick="(function(){ document.querySelector('html').classList.toggle('mobile-nav-active') })()"><span class="mobile-nav-icon"></span><span class="hidden-label">Navigate<span></span></span></button>
+</nav>
+</div></div>
+<div class="site-main">
+<div class="main ">
+  <div class="main-content">
+<article class="entry post   " role="article">
+  <header class="entry-header">
+    
+    <div class='entry-header-content'>
+      <h1 class="entry-title">Hello&nbsp;World</h1>
+      
+      
+    </div>
+  </header>
+
+  <div class="entry-meta"><a class='entry-date' href="/2015/11/30/hello-world.html"><time class='entry-date' datetime='2015-11-30T12:11:54-08:00'><span class='date'><span class='date-month'>Nov</span> <span class='date-day'>30</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span></time></a></div>
+
+  <div class="entry-content">
+<h1 id="octopress-30">Octopress 3.0</h1>
+
+<p>So I’m going to use these github pages as a place to stash random programming and<br />
+configuration tips.  It’s probably too ambitious to think it will turn<br />
+out to be useful for myself, let alone anyone else.  Having said that, might as well<br />
+document setting up this blog since many of the google results for using Octopress on<br />
+Github are outdated.</p>
+
+<h2 id="initial-setup">Initial Setup</h2>
+
+<figure class="code-highlight-figure"><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>mkdir ~/blog
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span><span class="nb">cd</span> ~/blog
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>vi Gemfile</div></div></pre></div></figure>
+
+<figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">Gemfile</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="n">source</span> <span class="s1">&#39;https://rubygems.org&#39;</span>
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="n">gem</span> <span class="s1">&#39;jekyll&#39;</span>
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="n">group</span> <span class="ss">:jekyll_plugins</span> <span class="k">do</span>
+</div></div><div data-line="6" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="n">gem</span> <span class="s1">&#39;octopress&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 3.0.11&#39;</span>
+</div></div><div data-line="7" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="n">gem</span> <span class="s1">&#39;octopress-image-tag&#39;</span>
+</div></div><div data-line="8" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="n">gem</span> <span class="s1">&#39;octopress-video-tag&#39;</span>
+</div></div><div data-line="9" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="n">gem</span> <span class="s1">&#39;octopress-quote-tag&#39;</span>
+</div></div><div data-line="10" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="n">gem</span> <span class="s1">&#39;octopress-codefence&#39;</span>
+</div></div><div data-line="11" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="n">gem</span> <span class="s1">&#39;octopress-gist&#39;</span>
+</div></div><div data-line="12" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="n">gem</span> <span class="s1">&#39;octopress-genesis-theme&#39;</span>
+</div></div><div data-line="13" class="code-highlight-row numbered"><div class="code-highlight-line">    <span class="n">gem</span> <span class="s1">&#39;octopress-solarized&#39;</span>
+</div></div><div data-line="14" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="k">end</span></div></div></pre></div></figure>
+
+<figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">Installing ruby and the gem bundle program</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>sudo dnf install rubygem-bundler
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>bundle install 
+</div></div><div data-line="6" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>octopress init .
+</div></div><div data-line="7" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>vi _config.yml
+</div></div><div data-line="8" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>vi .gitignore
+</div></div><div data-line="9" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>mkdir -p _plugins/theme/
+</div></div><div data-line="10" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>vi _plugins/theme/_config.yml</div></div></pre></div></figure>
+
+<p>An idea of what to put into the _config.yml<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> and .gitignore<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup><br />
+files can be seen below.  The main thing of note at this point is that very little is<br />
+needed in your ~/blog directory.  Almost everything, including the default theme will<br />
+be held in gems not checked into our blog source directory.  That’s why you have to<br />
+create a separate _plugins/theme/_config.yml<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> file to override the title<br />
+which is set in the theme gem.</p>
+
+<figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">Create your first post</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>octopress new post <span class="s2">&quot;Hello World&quot;</span> -D octopress
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">New post: _posts/octopress/2015-11-30-hello-world.md
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>vi _posts/octopress/2015-11-30-hello-world.md</div></div></pre></div></figure>
+
+<p>After entering some content in Markdown format, you check out your results by running<br />
+a jekyll server instance and then going to <a href="http://localhost:4000">http://localhost:4000</a> with your web browser</p>
+
+<figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">Running a local instance of your blog</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>jekyll serve -w
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">Configuration file: /home/sean/blog/_config.yml
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">            Source: /home/sean/blog
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">       Destination: /home/sean/blog/_site
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">      Generating... 
+</div></div><div data-line="6" class="code-highlight-row numbered"><div class="code-highlight-line">                    <span class="k">done</span>.
+</div></div><div data-line="7" class="code-highlight-row numbered"><div class="code-highlight-line"> Auto-regeneration: enabled <span class="k">for</span> <span class="s1">&#39;/home/sean/blog&#39;</span>
+</div></div><div data-line="8" class="code-highlight-row numbered"><div class="code-highlight-line">Configuration file: /home/sean/blog/_config.yml
+</div></div><div data-line="9" class="code-highlight-row numbered"><div class="code-highlight-line">    Server address: http://127.0.0.1:4000/
+</div></div><div data-line="10" class="code-highlight-row numbered"><div class="code-highlight-line">  Server running... press ctrl-c to stop.</div></div></pre></div></figure>
+
+<h2 id="committing-to-git">Committing to Git</h2>
+
+<figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">Commit to Git</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>git init
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>git add .
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Initial Checkin&quot;</span></div></div></pre></div></figure>
+
+<h2 id="deploying">Deploying</h2>
+
+<figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">Deploy</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>octopress deploy</div></div></pre></div></figure>
+
+<h2 id="example-files">Example Files</h2>
+
+<figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">_config.yml</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Loop&#39;s Tech Tips</span>
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">email</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">sean@eztux.com</span>
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span> <span class="p-Indicator">&gt;</span>
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="no">You&#39;re not likely to find much of any practical value for yourself</span>
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="no">here on this site.  It&#39;s meant mostly as a dumping ground for</span>
+</div></div><div data-line="6" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="no">random programming and configuration items.  If anything you read</span>
+</div></div><div data-line="7" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="no">here breaks something for you, you get to keep both halves.  Cheers!</span>
+</div></div><div data-line="8" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="s">&quot;http://loops.github.io&quot;</span>
+</div></div><div data-line="9" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">twitter_username</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">linux_or_bust</span>
+</div></div><div data-line="10" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">github_username</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">loops</span>
+</div></div><div data-line="11" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="12" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="c1"># Don&#39;t include these files when we build our site</span>
+</div></div><div data-line="13" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">exclude</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="s">&#39;Gemfile.lock&#39;</span><span class="p-Indicator">,</span> <span class="s">&#39;Gemfile&#39;</span><span class="p-Indicator">]</span>
+</div></div><div data-line="14" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="15" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="c1"># Select our desired Markdown processing engine</span>
+</div></div><div data-line="16" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">markdown</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">kramdown</span>
+</div></div><div data-line="17" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="18" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="c1"># Configure the Kramdown engine to enable its Github features</span>
+</div></div><div data-line="19" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">kramdown</span><span class="p-Indicator">:</span>
+</div></div><div data-line="20" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="l-Scalar-Plain">input</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">GFM</span>
+</div></div><div data-line="21" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="22" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="c1"># You could use the popular Redcarpet markdown engine instead</span>
+</div></div><div data-line="23" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="c1"># It has a few extensions to do things like convert plain URL&#39;s to links</span>
+</div></div><div data-line="24" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">redcarpet</span><span class="p-Indicator">:</span>
+</div></div><div data-line="25" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="l-Scalar-Plain">extensions</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="s">&quot;tables&quot;</span><span class="p-Indicator">,</span> <span class="s">&quot;autolink&quot;</span><span class="p-Indicator">,</span> <span class="s">&quot;strikethrough&quot;</span><span class="p-Indicator">,</span> <span class="s">&quot;space_after_headers&quot;</span><span class="p-Indicator">,</span> <span class="s">&quot;with_toc_data&quot;</span><span class="p-Indicator">,</span> <span class="s">&quot;fenced_code_blocks&quot;</span><span class="p-Indicator">]</span>
+</div></div><div data-line="26" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="27" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="c1"># Octopress settings</span>
+</div></div><div data-line="28" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">post_ext</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">md</span>
+</div></div><div data-line="29" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">page_ext</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">html</span>
+</div></div><div data-line="30" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">post_layout</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">theme:post</span>
+</div></div><div data-line="31" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">page_layout</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">theme:page</span>
+</div></div><div data-line="32" class="code-highlight-row numbered"><div class="code-highlight-line"> </div></div><div data-line="33" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="c1"># Make sure these gems are loaded, when we produce our static site</span>
+</div></div><div data-line="34" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">gems</span><span class="p-Indicator">:</span>
+</div></div><div data-line="35" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">octopress-genesis-theme</span>
+</div></div><div data-line="36" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">octopress-solarized</span>
+</div></div><div data-line="37" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">octopress-image-tag</span>
+</div></div><div data-line="38" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">octopress-video-tag</span>
+</div></div><div data-line="39" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">octopress-quote-tag</span>
+</div></div><div data-line="40" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">octopress-codefence</span>
+</div></div><div data-line="41" class="code-highlight-row numbered"><div class="code-highlight-line">  <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">octopress-gist</span></div></div></pre></div></figure>
+
+<figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">.gitignore</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line">_site
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">*.swp
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">.ink-cache
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">.sass-cache
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">.code-highlighter-cache</div></div></pre></div></figure>
+
+<figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">_plugins/theme/_config.yml to override options set by the theme gem</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Loop&#39;s Tech Tips</span>
+</div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="l-Scalar-Plain">subtitle</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">It&#39;s a big world</span></div></div></pre></div></figure>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>example _config.yml below <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>example .gitignore below <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>_plugins/theme/_config.yml exmple below <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+<div class="entry-social-sharing social-links"><a class="twitter-share-link" href="https://twitter.com/intent/tweet?&text=Hello%20World%20%20%20-%20http%3A%2F%2Floops.github.io%2F2015%2F11%2F30%2Fhello-world.html" title="Share on Twitter">Twitter</a><a class="facebook-share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://loops.github.io/2015/11/30/hello-world.html" title="Share on Facebook">Facebook</a><a class="g-plus-share-link" href="https://plus.google.com/share?url=http://loops.github.io/2015/11/30/hello-world.html" title="Share on Google+">Google+</a><a class="email-share-link" href="mailto:?subject=Hello%20World&body=Hello%20World%20%20-%20http%3A%2F%2Floops.github.io%2F2015%2F11%2F30%2Fhello-world.html" title="Share via email">Email</a></div>
+
+
+
+
+</div>
+
+  <footer class='entry-footer' role='contentinfo'>
+    
+  </footer>
+
+</article>
+</div>
+  
+</div>
+</div>
+<div class="site-bottom"><div class="site-bottom-content">
+<footer class='site-footer' role="contentinfo">
+  <p class='footer-copyright'>Copyright © 2015
+  - Powered by <a href='http://octopress.org'>Octopress</a></p>
+  
+</footer>
+</div></div></div>
+</div>
+  <script async src='/javascripts/all-aaf38d987f39ba34bb83b216dd1882c5.js'></script>
+  
+  
+</body>
+</html>
