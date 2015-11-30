@@ -84,7 +84,8 @@
 configuration tips.  It’s probably too ambitious to think it will turn<br />
 out to be useful for myself, let alone anyone else.  Having said that, might as well<br />
 document setting up this blog since many of the google results for using Octopress on<br />
-Github are outdated.</p>
+Github are outdated.  Although, there’s lots of good information on their website<br />
+<a href="http://jekyllrb.com/docs/home/">http://jekyllrb.com/docs/home/</a>.</p>
 
 <h2 id="initial-setup">Initial Setup</h2>
 
@@ -106,7 +107,7 @@ Github are outdated.</p>
 </div></div><div data-line="14" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="k">end</span></div></div></pre></div></figure>
 
 <figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">Installing ruby and the gem bundle program</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>sudo dnf install rubygem-bundler
-</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>bundle install 
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>bundle install
 </div></div><div data-line="6" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>octopress init .
 </div></div><div data-line="7" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>vi _config.yml
 </div></div><div data-line="8" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>vi .gitignore
@@ -131,7 +132,7 @@ a jekyll server instance and then going to <a href="http://localhost:4000">http:
 </div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line">Configuration file: /home/sean/blog/_config.yml
 </div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line">            Source: /home/sean/blog
 </div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line">       Destination: /home/sean/blog/_site
-</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">      Generating... 
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line">      Generating...
 </div></div><div data-line="6" class="code-highlight-row numbered"><div class="code-highlight-line">                    <span class="k">done</span>.
 </div></div><div data-line="7" class="code-highlight-row numbered"><div class="code-highlight-line"> Auto-regeneration: enabled <span class="k">for</span> <span class="s1">&#39;/home/sean/blog&#39;</span>
 </div></div><div data-line="8" class="code-highlight-row numbered"><div class="code-highlight-line">Configuration file: /home/sean/blog/_config.yml
@@ -140,13 +141,15 @@ a jekyll server instance and then going to <a href="http://localhost:4000">http:
 
 <h2 id="committing-to-git">Committing to Git</h2>
 
+<p>Once you’re happy with this initial blog entry it’s time to commit all your source files<br />
+to Git and push them to Github.  This repository will only store the source files, not<br />
+the generated content.  First create a repository named “blog” on Github, and then:</p>
+
 <figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">Commit to Git</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>git init
 </div></div><div data-line="2" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>git add .
-</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Initial Checkin&quot;</span></div></div></pre></div></figure>
-
-<h2 id="deploying">Deploying</h2>
-
-<figure class="code-highlight-figure"><figcaption class="code-highlight-caption"><span class="code-highlight-caption-title">Deploy</span></figcaption><div class="code-highlight"><pre class="code-highlight-pre"><div data-line="1" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>octopress deploy</div></div></pre></div></figure>
+</div></div><div data-line="3" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>git commit -m <span class="s2">&quot;Initial Checkin&quot;</span>
+</div></div><div data-line="4" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>git remote add origin git@github.com:loops/blog.git
+</div></div><div data-line="5" class="code-highlight-row numbered"><div class="code-highlight-line"><span class="nv">$ </span>git push -u origin master</div></div></pre></div></figure>
 
 <h2 id="example-files">Example Files</h2>
 
@@ -212,7 +215,15 @@ a jekyll server instance and then going to <a href="http://localhost:4000">http:
 
 <div class="entry-social-sharing social-links"><a class="twitter-share-link" href="https://twitter.com/intent/tweet?&text=Hello%20World%20%20%20-%20http%3A%2F%2Floops.github.io%2F2015%2F11%2F30%2Fhello-world.html" title="Share on Twitter">Twitter</a><a class="facebook-share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://loops.github.io/2015/11/30/hello-world.html" title="Share on Facebook">Facebook</a><a class="g-plus-share-link" href="https://plus.google.com/share?url=http://loops.github.io/2015/11/30/hello-world.html" title="Share on Google+">Google+</a><a class="email-share-link" href="mailto:?subject=Hello%20World&body=Hello%20World%20%20-%20http%3A%2F%2Floops.github.io%2F2015%2F11%2F30%2Fhello-world.html" title="Share via email">Email</a></div>
 
+<nav role="pagination" class="post-nav">
 
+
+<a class="next-post" href="/2015/11/30/deploy-world.html" title="Next Article: Deploy World">
+  <div class='next-post-marker'>Next Article <span class='next-post-arrow'>&rarr;</span></div>
+  <h6 class='next-post-title'>Deploy World</h6>
+</a>
+
+</nav>
 
 
 </div>
