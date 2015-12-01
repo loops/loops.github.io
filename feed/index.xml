@@ -6,9 +6,46 @@
 </description>
     <link>http://loops.github.io/</link>
     <atom:link href="http://loops.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Nov 2015 14:39:33 -0800</pubDate>
-    <lastBuildDate>Mon, 30 Nov 2015 14:39:33 -0800</lastBuildDate>
+    <pubDate>Mon, 30 Nov 2015 17:29:38 -0800</pubDate>
+    <lastBuildDate>Mon, 30 Nov 2015 17:29:38 -0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Changing the Default Theme Colors</title>
+        <description>&lt;p&gt;So it turns out that there are some minor color artifacts for the current version of&lt;br /&gt;
+the &lt;a href=&quot;https://github.com/octopress/genesis-theme&quot;&gt;octopress-genesis-theme&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I could not find a good way to override the settings without copying way too much of the&lt;br /&gt;
+theme into the content repo.  Really this is cross-poluting the content repo, with&lt;br /&gt;
+the theme repo’s… but what can you do.&lt;/p&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;figcaption class=&quot;code-highlight-caption&quot;&gt;&lt;span class=&quot;code-highlight-caption-title&quot;&gt;Copy the current theme settings&lt;/span&gt;&lt;/figcaption&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;octopress ink copy theme&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;code-highlight-figure&quot;&gt;&lt;figcaption class=&quot;code-highlight-caption&quot;&gt;&lt;span class=&quot;code-highlight-caption-title&quot;&gt;_plugins/theme directory after &#39;ink copy theme&#39; command&lt;/span&gt;&lt;/figcaption&gt;&lt;div class=&quot;code-highlight&quot;&gt;&lt;pre class=&quot;code-highlight-pre&quot;&gt;&lt;div data-line=&quot;1&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;config.yml
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;2&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;stylesheets
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;3&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;stylesheets/core
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;4&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;includes
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;5&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;layouts
+&lt;/div&gt;&lt;/div&gt;&lt;div data-line=&quot;6&quot; class=&quot;code-highlight-row numbered&quot;&gt;&lt;div class=&quot;code-highlight-line&quot;&gt;templates&lt;/div&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;So then to keep the polution to a minimum, I deleted everything but the stylesheets/core&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br /&gt;
+directory after which _colors.scss and _sizes.scss could be customized.  Once everything&lt;br /&gt;
+is working locally, commit the changes to git, and deploy to github.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Actually I had to restore config.yml from git since the “ink copy” overwrote it &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Mon, 30 Nov 2015 17:11:15 -0800</pubDate>
+        <link>http://loops.github.io/2015/11/30/changing-the-default-theme-colors.html</link>
+        <guid isPermaLink="true">http://loops.github.io/2015/11/30/changing-the-default-theme-colors.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Deploy World</title>
@@ -30,7 +67,10 @@ following command can generate and deploy content to your Github page:&lt;/p&gt;
 for free hosting on Github.  You’ll want to add this .deploy directory to your&lt;br /&gt;
 .gitignore file.&lt;/p&gt;
 
-&lt;p&gt;You should be able to see your blog site working on &lt;a href=&quot;http://loops.github.io&quot;&gt;http://loops.github.io&lt;/a&gt; now.&lt;/p&gt;
+&lt;p&gt;You should be able to see your blog site working on &lt;a href=&quot;http://loops.github.io&quot;&gt;http://loops.github.io&lt;/a&gt; now.&lt;br /&gt;
+Check out the /feed/index.xml that I added to the repo so that RSS subscriptions&lt;br /&gt;
+work.&lt;/p&gt;
+
 </description>
         <pubDate>Mon, 30 Nov 2015 14:11:28 -0800</pubDate>
         <link>http://loops.github.io/2015/11/30/deploy-world.html</link>
