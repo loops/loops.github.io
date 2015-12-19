@@ -74,9 +74,12 @@
     <div class="entry-meta"><a href="/fedora/secureboot/2015/12/19/secureboot_on_fedora.html"><time class='entry-date' datetime='2015-12-19T01:43:52-08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span></time></a></div>
   </header>
 
-  <div class="entry-content"><p>To sign kernels that can be booted under UEFI Secureboot you first need a certificate.  <br />
-This certificate is registered with the UEFI, and is also used by the pesign utility<br />
-to bless each kernel image.</p>
+  <div class="entry-content"><p>The following describes a setup for Secureboot when using the fedora_shim, and grub2<br />
+boot loader.  This combination requires that each kernel be signed with a certificate.<br />
+There are alternatives like the Linux Foundation PreLoader which doesn’t require<br />
+kernels to be signed, instead it just needs to be given a hash for each authorized<br />
+boot kernel.  There are other setups where grub2 wouldn’t be needed either, such as<br />
+when using the <a href="http://www.rodsbooks.com/refind/">rEFInd boot manager</a>.</p>
 
 </div>
 

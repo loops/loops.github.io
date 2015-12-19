@@ -6,13 +6,20 @@
 </description>
     <link>http://loops.github.io/</link>
     <atom:link href="http://loops.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Dec 2015 01:49:40 -0800</pubDate>
-    <lastBuildDate>Sat, 19 Dec 2015 01:49:40 -0800</lastBuildDate>
+    <pubDate>Sat, 19 Dec 2015 02:25:49 -0800</pubDate>
+    <lastBuildDate>Sat, 19 Dec 2015 02:25:49 -0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Secureboot on Fedora</title>
-        <description>&lt;p&gt;To sign kernels that can be booted under UEFI Secureboot you first need a certificate.  &lt;br /&gt;
+        <description>&lt;p&gt;The following describes a setup for Secureboot when using the fedora_shim, and grub2&lt;br /&gt;
+boot loader.  This combination requires that each kernel be signed with a certificate.&lt;br /&gt;
+There are alternatives like the Linux Foundation PreLoader which doesn’t require&lt;br /&gt;
+kernels to be signed, instead it just needs to be given a hash for each authorized&lt;br /&gt;
+boot kernel.  There are other setups where grub2 wouldn’t be needed either, such as&lt;br /&gt;
+when using the &lt;a href=&quot;http://www.rodsbooks.com/refind/&quot;&gt;rEFInd boot manager&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;To sign kernels that can be booted under UEFI Secureboot you first need a certificate.  &lt;br /&gt;
 This certificate is registered with the UEFI, and is also used by the pesign utility&lt;br /&gt;
 to bless each kernel image.&lt;/p&gt;
 
