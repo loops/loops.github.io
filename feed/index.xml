@@ -6,9 +6,66 @@
 </description>
     <link>http://loops.github.io/</link>
     <atom:link href="http://loops.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 01 Dec 2015 22:25:50 -0800</pubDate>
-    <lastBuildDate>Tue, 01 Dec 2015 22:25:50 -0800</lastBuildDate>
+    <pubDate>Sat, 19 Dec 2015 01:49:40 -0800</pubDate>
+    <lastBuildDate>Sat, 19 Dec 2015 01:49:40 -0800</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Secureboot on Fedora</title>
+        <description>&lt;p&gt;To sign kernels that can be booted under UEFI Secureboot you first need a certificate.  &lt;br /&gt;
+This certificate is registered with the UEFI, and is also used by the pesign utility&lt;br /&gt;
+to bless each kernel image.&lt;/p&gt;
+
+&lt;p&gt;First create this certificate:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# efikeygen \
+    --self-sign \
+    --nickname=&quot;Loops Local Certificate&quot; \
+    --common-name=&quot;CN=Loops of Eztux certificate for local signing&quot; \
+    --url=&quot;http://eztux.com/about&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The certificate is placed in the /etc/pki/pesign datastore.  This means that&lt;br /&gt;
+the above (and following) commands need to be run as root.  You can then&lt;br /&gt;
+extract this certificate into a separate file used when registering it with UEFI.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# cd ~
+# certutil -d /etc/pki/pesign/ -L -n &quot;Loops Local Certificate&quot; -r &amp;gt; ./loops.cer
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Make sure to back this “loops.cer” certificate since it will be used for all&lt;br /&gt;
+locally authorized kernels (including those from other distros if you want to&lt;br /&gt;
+boot them).&lt;/p&gt;
+
+&lt;p&gt;Now register this certificate with UEFI:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# mokutil --import ./loops.cer
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You will have to assign a password which will be used next time you reboot the computer&lt;br /&gt;
+to authorize this certificate being imported into UEFI.  Once this has been done,&lt;br /&gt;
+any kernel that you boot with the fedora_shim will work in secure mode, as long as it&lt;br /&gt;
+has been signed with this certificate:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# pesign -c &#39;Loops Local Certificate&#39; -i bzImage -o vmlinuz.signed --sign
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that the external loops.cer file is no longer needed and should be removed from&lt;br /&gt;
+the filesystem.  The copy held in the pki store will be used by the pesign utility.&lt;/p&gt;
+
+&lt;p&gt;Move the vmlinuz.signed output file into /boot to be accessed by grub on startup.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 19 Dec 2015 01:43:52 -0800</pubDate>
+        <link>http://loops.github.io/fedora/secureboot/2015/12/19/secureboot_on_fedora.html</link>
+        <guid isPermaLink="true">http://loops.github.io/fedora/secureboot/2015/12/19/secureboot_on_fedora.html</guid>
+        
+        
+        <category>fedora</category>
+        
+        <category>secureboot</category>
+        
+      </item>
     
       <item>
         <title>Changing the Default Theme Colors</title>
